@@ -1,0 +1,44 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	double cost, quantity;
+	cout<<"\n\t**************************************************************************************\n";
+	cout<<"\t\t:S o f t w a r e    c o m p a n y    sells    a    p a c k a g e:\n";
+	cout<<"\t**************************************************************************************\n\n";
+
+	cout<<"Enter here how many unit sold : ";
+	cin>>quantity;
+	if(quantity >0 && quantity <10)
+	{
+		cost=quantity*99;
+		cout<<"\nTotal cost of the purchase is : $"<<cost<<endl;
+	}
+	else if(quantity >=10 && quantity <=19)
+	{
+		cost=quantity*99*0.2;
+		cout<<"\nTotal cost of the purchase is : $"<<cost<<endl;
+	}
+	else if(quantity >=20 && quantity <=49)
+	{
+		cost=quantity*99*0.3;
+		cout<<"\nTotal cost of the purchase is : $"<<cost<<endl;
+	}
+	else if(quantity >=50 && quantity <=99)
+	{
+		cost=quantity*99*0.4;
+		cout<<"\nTotal cost of the purchase is : $"<<cost<<endl;
+	}
+	else if(quantity > 100)
+	{
+		cost=quantity*99*0.5;
+		cout<<"\nTotal cost of the purchase is : $"<<cost<<endl;
+	}
+	else
+	{
+		cout<<"\nInvalid Input!!! Please Enter Greater than 0...";
+	}
+return 0;
+}
